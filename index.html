@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #25283b;
+            background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
+        }
+        body::before {
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+        /* Butterfly Positioning */
+        model-viewer {
+            position: absolute;
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Adjust size as needed */
+            bottom: 20%; /* Adjust vertical position */
+            left: 20%; /* Adjust horizontal position */
+            z-index: 10; /* Ensure it appears above other elements */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="content-fit">
+            <div class="logo">KRATOS</div>
+            <nav>
+                <ul>
+                    <li>Contacts</li>
+                    <li>Category</li>
+                    <li>Explore</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/dragon_1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="KRATOS">
+                KRATOS
+            </h1>
+            <div class="author">
+                <h2>WELCOME</h2>
+                <p><b>You're not gonna go empty!!</b></p>
+                <p>
+                    Sit Back, Relex and Enjoy the Show!!
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+<!-- partial:index.partial.html 
+<pointer-particles></pointer-particles>
+ partial -->
+ <pointer-particles></pointer-particles>
+    <br>
+    <div class="rocket">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/saanEpwA8ZKNQlia/scene.splinecode"></spline-viewer>
+    </div>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="galaxy">
+     <H2>METAVERSE GALAXY</H2> 
+    </div>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(https://i.ibb.co/TBvVgSKF/mercury.jpg);">
+                <div class="content">
+                    <div class="name">Mercury</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/wFNmYsNL/venus.png);">
+                <div class="content">
+                    <div class="name">Venus</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/ZzRP43Ts/earth.jpg);">
+                <div class="content">
+                    <div class="name">Earth</div>
+                    <div class="des">See the best of your planet !</div>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/qFNww4xs/mars-surface.jpg);">
+                <div class="content">
+                    <div class="name">Mars</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/qM80cbGG/jupiter.jpg);">
+                <div class="content">
+                    <div class="name">Jupiter</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/qYN39Q7H/saturn.jpg);">
+                <div class="content">
+                    <div class="name">Saturn</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/fVcBzkgx/uranus.jpg);">
+                <div class="content">
+                    <div class="name">Uranus</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/spVp7jCC/neptune.jpg);">
+                <div class="content">
+                    <div class="name">Neptune</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!------Bee Section------>
+    <div class="section" id="banner">
+        <div class="content-fit">
+            <div class="title" data-before="IMMERSED">NATURE</div>
+        </div>
+        <img src="images/flower.png" class="decorate" alt="" style="width: 50vw; bottom: 0; right: 0;">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <model-viewer class="bff" src="butterfly.glb" alt="3D Model" auto-rotate camera-controls></model-viewer>
+ <img src="images/leaf.png" class="decorate" alt="" style="width: 30vw; bottom: 0; left: 0;"> 
+    </div>
+    <div class="btn">
+        <button id="flora">See More</button>
+    </div>
+    
+    <div class="section" id="intro">
+        <div class="content-fit">
+        
+            <div class="number">Game On</div>
+            <div class="des">
+                <div class="title">Level Up Your Skills with AR/VR Learning Adventures!</div>
+                <p>Imagine learning new skills not through boring textbooks, but by diving into a 
+                    world of fun and interactive games. With AR/VR gaming tools, we’re turning skill
+                     development into an exciting adventure. These tools make learning engaging,
+                      memorable, and accessible for everyone, including those with disabilities.
+                       Whether it’s mastering a new skill or sharpening existing ones, our gamified
+                        approach ensures learning feels like play. Let’s build a future where 
+                        everyone can grow, one game at a time!</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="description">
+        <div class="content-fit">
+            <div class="number">BENIFITS</div>
+            <div class="des">
+                <div class="title">nova</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas a porro libero
+                    recusandae quae, aut ratione, incidunt laborum, necessitatibus similique enim doloremque ex.
+                    Laudantium obcaecati</p>
+            </div>
+        </div>
+    </div>
+    <!-- <img src="images/leaf1.png" class="decorate" alt="" style="width: 70vw; bottom: 0; right: 0; z-index: 101;"> -->
+    <div class="section" id="contact">
+        <div class="content-fit">
+            <div class="number">03</div>
+            <div class="des">
+                <div class="title">CONTACT</div>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>shatakshig2005@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+91-9981599184</td>
+                    </tr>
+                    <tr>
+                        <td>Linkdin</td>
+                        <td>linkedin.com/in/shatakshi1</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>github.com/Shatakshi-gupta-ggits</td>
+                    </tr>
+                </table>
+                <div class="sign">Contact</div>
+
+
+    <div id="container3D"></div>
+    <script type="module" src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
